@@ -1,0 +1,45 @@
+.carousel-ban {
+    padding: 2% 1% 1% 1%;
+    border-radius: 5px ;
+    max-width: 100%;
+    overflow: hidden;
+    
+
+  }
+.Carousel.Item{
+    border-radius: 35px;
+  }
+  .carousel-ban img {
+    padding: 5px;
+    border-radius: 15px;
+  }
+@media (max-width: 575.98px) {
+
+    .carousel-ban {
+        padding: 5% 1% 1% 1%;
+       }
+
+       .carousel-ban img {
+        padding: 5px;
+        border-radius: 15px;
+      }
+
+}
+
+/* Small devices (phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+   }/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+    
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {}
+
+/* Extra extra large devices (very large screens, 1400px and up) */
+@media (min-width: 1400px) { }

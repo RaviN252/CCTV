@@ -1,0 +1,101 @@
+.signup-container {
+    background-color: rgb(255, 255, 255) !important; 
+  }
+     .form-control {
+      border: 1px solid #dee2e6;
+      border-radius: 8px;
+      font-size: 0.9rem;
+    }
+    
+    .signup-container .form-control:focus {
+      border-color: #86b7fe;
+      box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+    }
+    
+    .signup-container .btn-primary {
+      background-color: #6366f1;
+      border: none;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+    }
+    
+    .signup-container .btn-primary:hover {
+      background-color: #4f46e5;
+    }
+    .signup-container .form-section h2{
+      letter-spacing: .3px;
+      color: rgb(47, 42, 42);
+    }
+    
+    .signup-container .image-section {
+      /* background: #f8f9fa; */
+      /* height: 650px; */
+     
+          max-width: 100%;
+          height: auto;
+        
+    }
+    .signup-container input {
+      border: none;
+      border-bottom: 1px solid rgb(185, 176, 176);
+      border-radius: 0;
+    }
+    .signup-container input:focus {
+      box-shadow: none !important ;
+      /* border: none; */
+      border-bottom: 1px solid rgb(0, 0, 0) !important;
+  
+    }
+    .signup-container .form-check-input {
+      border:  1px solid black;
+    }
+  
+    @media (max-width: 768px) {
+      .signup-container {
+        /* margin: 2rem; */
+        width: 100%;
+      }
+      
+  
+    
+      .signup-container .image-section img {
+        border-radius: 20px 20px 0 0 !important;
+      }
+    
+      .signup-container .form-section {
+        padding: 2rem !important;
+      }
+      .signup-container .signup-container {
+          background: white;
+          /* max-width: 800px; */
+          width: 100% !important;
+          border-radius: 20px;
+          margin-top: 5%;
+        }
+    }
+    @media (min-width: 768px) and (max-width: 1024px) {
+      .signup-container {
+          background: white;
+          /* max-width: 800px; */
+          width: 80%;
+          border-radius: 20px;
+          margin-left: 10%;
+          margin-top: 5%;
+          /* padding: 50px !important; */
+          padding: 30px 30px 10px 50px;
+        }
+  
+    }
+  
+    @media (min-width: 1025px) {
+      .signup-container {
+          background: white;
+          /* max-width: 800px; */
+          width: 80%;
+          border-radius: 20px;
+          margin-left: 10%;
+          margin-top: 5%;
+          /* padding: 50px !important; */
+          padding: 30px 30px 10px 50px;
+        }
+    }

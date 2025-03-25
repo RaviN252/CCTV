@@ -1,0 +1,67 @@
+.invoice-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .invoice-form input {
+    width: 90%;
+    max-width: 400px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .invoice-table {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  
+  .invoice-table th, .invoice-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .invoice-table th {
+    background-color: #2c3e50;
+    color: white;
+  }
+  
+  .add-btn, .download-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .add-btn {
+    background-color: #27ae60;
+    color: white;
+  }
+  
+  .add-btn:hover {
+    background-color: #219150;
+  }
+  
+  .download-btn {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .download-btn:hover {
+    background-color: #2980b9;
+  }
+  
+  .remove-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+  }
+  

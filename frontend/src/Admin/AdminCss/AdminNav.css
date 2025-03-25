@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Sidebar Navigation */
+.sidenav-navigation {
+  position: fixed;
+  width: 80px;
+  height: 100%;
+  background: #ff7700;
+  overflow-y: auto;
+  transition: width 0.4s ease-in-out;
+  margin-left: 0;
+}
+
+/* Expand on hover */
+.sidenav-navigation:hover,
+.sidenav-navigation.sidenav-active {
+  width: 250px;
+}
+
+/* Sidebar List */
+.sidenav-navigation ul {
+  width: 100%;
+  padding: 0;
+}
+
+/* Sidebar List Items */
+.sidenav-navigation ul li {
+  list-style: none;
+  transition: background 0.3s;
+  margin-bottom: 5px;
+}
+
+/* Hover effect */
+.sidenav-navigation ul li:hover {
+  background: #3e3e3e;
+}
+
+/* Sidebar Links */
+.sidenav-navigation ul li a,
+.sidenav-navigation ul li button {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 15px 10px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+/* Hover effect */
+.sidenav-navigation ul li a:hover,
+.sidenav-navigation ul li button:hover {
+  background: #444;
+}
+
+/* Sidebar Icons */
+.sidenav-navigation ul li a .sidenav-icon,
+.sidenav-navigation ul li button .sidenav-icon {
+  min-width: 60px;
+  text-align: center;
+  font-size: 22px;
+  transition: margin 0.3s ease-in-out;
+}
+
+/* Sidebar Text */
+.sidenav-navigation ul li a .sidenav-title,
+.sidenav-navigation ul li button .sidenav-title {
+  opacity: 0;
+  visibility: hidden;
+  white-space: nowrap;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s;
+}
+
+/* Show text when hovered */
+.sidenav-navigation:hover .sidenav-title {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* 🔽 Dropdown Menu Styling */
+.dropdown-menu {
+  display: none;
+  background-color: #292929;
+  border-left: 3px solid #ffcc00;
+  padding-left: 15px;
+  transition: max-height 0.3s ease-in-out;
+}
+
+/* 🔽 Show dropdown when active */
+.dropdown.active .dropdown-menu {
+  display: block;
+  background-color: #292929;
+}
+
+/* 🔽 Dropdown Arrow Animation */
+.dropdown .dropdown-arrow {
+  margin-left: auto;
+  transition: transform 0.3s ease-in-out;
+}
+
+.dropdown.active .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+/* Mobile Navigation */
+@media (max-width: 767px) {
+  .sidenav-navigation {
+    left: -80px;
+    transition: left 0.4s ease-in-out;
+  }
+  
+  .sidenav-navigation.sidenav-active {
+    left: 0;
+    width: 100%;
+  }
+
+  /* Show full titles on mobile */
+  .sidenav-title {
+    opacity: 1 !important;
+    visibility: visible !important;
+  }
+}
+
+/* 🔴 SignOut Button */
+.signout-btn {
+  width: 100%;
+  background: none;
+  border: none;
+  color: red;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: left;
+  padding: 15px 10px;
+}
+
+.signout-btn:hover {
+  background: #ff5500;
+  color: white;
+}

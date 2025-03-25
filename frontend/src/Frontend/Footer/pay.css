@@ -1,0 +1,42 @@
+.payment-options {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 100px;
+    padding-right: 100px;
+    cursor: pointer;
+    color: rgb(248, 247, 247);
+}
+
+.option {
+    display: flex;
+    align-items: start;
+    /* margin: 10px 0; */
+}
+
+.option span {
+    font-size: 15px;
+    color: rgb(121, 114, 114);
+}
+
+.payment-options .icon {
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+@media (min-width: 768px) {
+    .payment-options {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .option {
+        margin: 0 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .payment-options {
+        padding-left: 10px;
+    }
+}

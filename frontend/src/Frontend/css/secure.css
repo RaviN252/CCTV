@@ -1,0 +1,159 @@
+
+
+
+/* why to choose us  */
+
+.feature .feature-item {
+    border-radius: 10px;
+    background: var(--bs-white);
+    background-color: rgb(249, 249, 243);
+    /* background-color:#33afff ; */
+    color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.feature .feature-item:hover {
+    /* background: var(--bs-primary); */
+    /* background: #007D69; */
+    color: rgb(0, 0, 0) !;
+  
+
+}
+
+.section-content{
+
+  padding-top: 10%;
+}
+
+
+.container-head h4 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    /* color: #007BFF;     */
+}
+
+.feature .feature-item .feature-icon {
+    position: relative;
+    width: 100px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: var(--bs-light);
+}
+
+.feature .feature-item:hover .feature-icon i {
+    z-index: 9;
+}
+
+.feature .feature-item .feature-icon::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background: var(--bs-dark);
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.feature .feature-item:hover .feature-icon::after {
+    height: 100%;
+}
+
+.feature .feature-item .feature-icon {
+    /* color: var(--bs-primary); */
+    color: black;
+
+}
+
+.feature .feature-item .feature-icon,
+.feature .feature-item h4,
+.feature .feature-item p {
+    transition: 0.5s;
+}
+
+.feature .feature-item:hover .feature-icon {
+    color: var(--bs-white);
+}
+.feature .feature-item:hover h4,
+.feature .feature-item:hover p {
+  
+    color: black
+}
+
+.feature .feature-item:hover a.btn {
+    background: var(--bs-white);
+    /* color: var(--bs-primary); */
+    /* color: #007BFF; */
+
+}
+
+.feature .feature-item:hover a.btn:hover {
+    background: var(--bs-dark);
+    /* color: var(--bs-white); */
+    color: rgb(0, 0, 0);
+}
+
+
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.logoss {
+  overflow: hidden;
+  padding: 30px 20px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logo_items_wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo_items {
+  display: inline-block;
+  animation: 50s slide-left infinite linear;
+}
+
+.logo_items.reverse {
+  animation: 50s slide-right infinite linear;
+}
+
+.logoss:hover .logo_items {
+  animation-play-state: paused;
+}
+
+.logo_items img {
+  height: 100px;
+  width: 200px;
+  padding: 5px;
+  box-shadow: 1px 0px 1px rgb(99, 96, 96);
+  margin: 0px 5px 0 5px;
+  border-radius: 3px;
+}
+
+
+
+
